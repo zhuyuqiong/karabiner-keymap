@@ -1,27 +1,28 @@
 {
-    "complex_modifications": {
-        "rules": [
-            {
-                "description": "F5 to command+r",
-                "manipulators": [
-                    {
-                        "type": "basic",
-                        "from": {
-                            "key_code": "f5"
-                        },
-                        "to": {
-                            "key_code": "r",
-                            "modifiers": ["left_command"]
-                        },
-                        "conditions": [
-                            {
-                                "type": "frontmost_application_if",
-                                "bundle_identifiers": ["^com.google.Chrome$"]
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    }
+    
+    "title": "Functions keymap",
+    "rules": [
+        {
+            "description": "F5 to command+r",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "f5"
+                    },
+                    "to": {
+                        "key_code": "r",
+                        "modifiers": ["left_command"]
+                    },
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": ["^com.google.Chrome$"]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+
 }
