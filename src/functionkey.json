@@ -22,6 +22,26 @@
                     ]
                 }
             ]
+        },
+        {
+            "description": "ctrl_shift_delete to delete caches",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "delete_forward"
+                    },
+                    "to": {
+                        "key_code": "delete_or_backspace"
+                    },
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": ["^com.google.Chrome$"]
+                        }
+                    ]
+                }
+            ]
         }
     ]
 
