@@ -30,11 +30,12 @@
                     "type": "basic",
                     "from": {
                         "key_code": "delete_forward",
-                        "modifiers": ["left_command","left_shift"]
+                        "modifiers": {
+                            "mandatory": ["command", "shift"]}
                     },
                     "to": {
                         "key_code": "delete_or_backspace",
-                        "modifiers": ["left_command","left_shift"]
+                        "modifiers": ["command","shift"]
                     },
                     "conditions": [
                         {
